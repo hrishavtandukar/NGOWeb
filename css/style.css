@@ -32,14 +32,15 @@ h6 {
     margin: 0 0 30px;
     text-transform: uppercase;
     font-family: Montserrat,sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1px;
 }
 
 p {
-    margin: 0 0 20px;
-    font-size: 16px;
+    margin: 10px 10px 20px;
+    font-size: 18px;
     line-height: 1.6em;
+    text-align: justify;
 }
 
 p.lead {
@@ -59,6 +60,10 @@ a:focus {
     color: #176e61;
 }
 
+.trekkingHover:hover
+{
+    color: red;
+}
 .light {
     font-weight: 400;
 }
@@ -435,6 +440,8 @@ hr {
 
 .service-icon {
 	margin-bottom: 20px;
+
+	
 }	
 
 
@@ -755,6 +762,55 @@ Parallax
     margin-top: 0;
 }
 
+/*For the Accordion Effect*/
+    .accordion
+    {
+        background-color: #eee;
+        color: #000;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 25px;
+        transition: 0.4s;
+        text-align: center;
+    }
+    .accordion.active, .accordion:hover 
+    {
+        background-color: #000;
+        color: #fff;
+    }
+    .accordion:after 
+    {
+        content: '\02795';
+        font-size: 23px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    .accordion.active:after 
+    {
+        content: "\2796";
+    }
+
+    .panel 
+    {
+        
+        background-color: black;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.6s ease-in-out;
+        opacity: 0;
+        width: 100%;
+        float: left;
+    }
+    .panel.show 
+    {
+        opacity: 1;
+        color: #C0C0C0;
+        max-height: 100%;  
+    }
 
 /* Media queries */
 
@@ -795,6 +851,7 @@ Parallax
 
 
 }
+
 @media (max-width:768px) {
 	
 	.team.boxed-grey {
