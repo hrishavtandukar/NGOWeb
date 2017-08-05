@@ -379,6 +379,7 @@ hr {
 
 .team p.subtitle {
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .avatar {
@@ -440,8 +441,6 @@ hr {
 
 .service-icon {
 	margin-bottom: 20px;
-
-	
 }	
 
 
